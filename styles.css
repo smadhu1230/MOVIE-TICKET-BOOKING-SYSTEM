@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: url('movie\ ticket.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.container {
+    width: 50%;
+    margin: auto;
+    background-color: lightcoral;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+}
+
+.seats {
+    margin: 20px 0;
+}
+
+.seat-container {
+    display: grid;
+    grid-template-columns: repeat(5, 40px);
+    gap: 10px;
+    justify-content: center;
+}
+
+.seat {
+    width: 40px;
+    height: 40px;
+    background: #ddd;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.seat.selected {
+    background: #6c5ce7;
+    color: white;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background: #0984e3;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #74b9ff;
+}
